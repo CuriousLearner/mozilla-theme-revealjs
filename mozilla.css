@@ -1,33 +1,21 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
  * Mozilla Firefox dark blue/grey theme for reveal.js.
  * 
  * Created by: Chris Turra <cturra@gmail.com>
  */
-@font-face {
-  font-family: 'League Gothic';
-  src: url("../../lib/font/league_gothic-webfont.eot");
-  src: url("../../lib/font/league_gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/league_gothic-webfont.woff") format("woff"), url("../../lib/font/league_gothic-webfont.ttf") format("truetype"), url("../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300');
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #1c1e20;
-  background: -moz-radial-gradient(center, circle cover, #6A7B86 0%, #424F5A 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #555a5f), color-stop(100%, #1c1e20));
-  background: -webkit-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background: -o-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background: -ms-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background: radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
   background-color: #2b2b2b;
+  background:url('http://mozorg.cdn.mozilla.net/media/img/sandstone/bg-gradient-sand.png');
+  color:#333333;
+  font-family: 'Open Sans',sans-serif;
 }
 
 .reveal {
-  font-family: "Lato", Times, "Times New Roman", serif;
   font-size: 36px;
   font-weight: 200;
   letter-spacing: -0.02em;
@@ -41,6 +29,22 @@ body {
 }
 
 /*********************************************
+ * TEXT
+ *********************************************/
+
+.reveal p {
+	color:#333;
+}
+
+.reveal blockquote {
+	background:#fff;
+	font-family: 'Open Sans',sans-serif;
+	font-style: normal;
+	font-size:26px;
+	font-weight: 400;
+}
+
+/*********************************************
  * HEADERS
  *********************************************/
 .reveal h1,
@@ -50,12 +54,13 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #eeeeee;
-  font-family: "League Gothic", Impact, sans-serif;
+  color: #484848;
+  font-family: 'Open Sans',sans-serif;
   line-height: 0.9em;
+  font-weight: 300;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
 }
 
 .reveal h1 {
@@ -66,7 +71,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #FF9500;
+  color: #0096DD;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -76,14 +81,14 @@ body {
 }
 
 .reveal a:not(.image):hover {
-  color: #FF9500;
+  color: #0096DD;
   text-shadow: none;
   border: none;
 }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #FF9500;
+  background: #0096DD;
 }
 
 /*********************************************
@@ -121,49 +126,49 @@ body {
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #FF9500;
+  border-right-color: #0096DD;
 }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #FF9500;
+  border-left-color: #0096DD;
 }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #FF9500;
+  border-bottom-color: #0096DD;
 }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #FF9500;
+  border-top-color: #0096DD;
 }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #FFCB00;
+  border-right-color: #0054A0;
 }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #FFCB00;
+  border-left-color: #0054A0;
 }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #FFCB00;
+  border-bottom-color: #0054A0;
 }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #FFCB00;
+  border-top-color: #0054A0;
 }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: rgba(0, 0, 0, 0.2);
+  background: #fff;
 }
 
 .reveal .progress span {
-  background: #FF9500;
+	background: #E83B28;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
